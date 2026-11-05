@@ -154,7 +154,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./codebook/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">All criteria / Overview</span></a>
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./codebook/acceptance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Evidentiary Acceptance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./codebook/assessment-focus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Assessment Focus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./codebook/substantive-criteria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Substantive criteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -184,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./codebook/e.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">E. Surrounding behaviour</span></a>
+ <span class="menu-text">E. Surrounding behavior</span></a>
   </div>
 </li>
       </ul>
@@ -217,24 +235,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Reference documentation for identifying and coding credibility and reliability assessments in Swedish court rulings.</p>
-<div class="start-note">
-<strong>Start here</strong>
-<p>
-<strong>New coders should read the Coding Structure first.</strong> It explains what qualifies for coding, how to record assessments, and how to apply the coding variables. The Codebook provides the definitions, boundaries, examples, and finding categories for individual criteria.
-</p>
-</div>
-<!-- --- MAIN NAVIGATION --- -->
+<section id="start-here" class="level2">
+<h2 class="anchored" data-anchor-id="start-here">Start here</h2>
+<p>Version 3. Read the Coding Structure first, then the Codebook.</p>
+<p>The search icon in the top right opens a search across the website. Criterion sections can be expanded individually or with <strong>Expand all</strong>.</p>
 <div class="home-cards">
-<p><a class="home-card" href="coding-structure.html"><strong>Coding Structure</strong><span>Inclusion rules, variables, coding procedure, and special cases →</span></a> <a class="home-card" href="codebook/index.html"><strong>Codebook</strong><span>Browse the 26 criteria across five categories →</span></a></p>
+<p><a class="home-card" href="coding-structure.html"><strong>Coding Structure</strong><span>Workflow, units, and recording procedures →</span></a> <a class="home-card" href="codebook/index.html"><strong>Codebook</strong><span>Parts I–III, definitions, boundaries, Findings, and examples →</span></a></p>
 </div>
-<section id="pdf-reference-copies" class="level2">
-<h2 class="anchored" data-anchor-id="pdf-reference-copies">PDF reference copies</h2>
+</section>
+<section id="pdf-downloads" class="level2">
+<h2 class="anchored" data-anchor-id="pdf-downloads">PDF downloads</h2>
 <ul>
-<li><a href="pdf/coding-structure.pdf">Coding Structure (PDF)</a></li>
-<li><a href="pdf/codebook.pdf">Codebook (PDF)</a></li>
+<li><a href="pdf/coding-structure-v3.pdf" download="coding-structure-v3.pdf">Coding Structure — Version 3 (PDF)</a></li>
+<li><a href="pdf/codebook-v3.pdf" download="codebook-v3.pdf">Codebook — Version 3 (PDF)</a></li>
 </ul>
-<p>The PDFs reproduce the supplied Word documents and may retain editorial issues corrected in the website. The website is the corrected navigation version.</p>
 
 
 </section>
@@ -242,6 +256,18 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script>
 (function () {
+  function markCurrentNavigation() {
+    var path = window.location.pathname;
+    document.querySelectorAll('.navbar .nav-link').forEach(function (link) {
+      var target = new URL(link.getAttribute('data-original-href') || link.href).pathname;
+      var codebook = target.endsWith('/codebook/index.html');
+      var active = path === target || path === target.replace(/index\.html$/, '') ||
+        (codebook && path.startsWith(target.slice(0, -10)));
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+  }
   function openHashTarget() {
     if (!window.location.hash) return;
     var id = decodeURIComponent(window.location.hash.slice(1));
@@ -251,6 +277,15 @@ ul.task-list li input[type="checkbox"] {
     var p = el.parentElement;
     while (p) { if (p.tagName === 'DETAILS') p.open = true; p = p.parentElement; }
     setTimeout(function () { el.scrollIntoView({block: 'start'}); }, 70);
+  }
+  function openSearchMatches() {
+    document.querySelectorAll('#source-content mark').forEach(function (mark) {
+      var parent = mark.parentElement;
+      while (parent) {
+        if (parent.tagName === 'DETAILS') parent.open = true;
+        parent = parent.parentElement;
+      }
+    });
   }
   document.addEventListener('click', function (ev) {
     var btn = ev.target.closest('button[data-expand]');
@@ -263,7 +298,10 @@ ul.task-list li input[type="checkbox"] {
   });
   window.addEventListener('hashchange', openHashTarget);
   document.addEventListener('DOMContentLoaded', openHashTarget);
+  document.addEventListener('DOMContentLoaded', markCurrentNavigation);
+  document.addEventListener('DOMContentLoaded', openSearchMatches);
   window.addEventListener('load', openHashTarget);
+  window.addEventListener('load', markCurrentNavigation);
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

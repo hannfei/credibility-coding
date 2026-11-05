@@ -62,3 +62,20 @@ h1,h2,h3 { color: var(--navy); }
 .detail-body a.anchorjs-link {
   display: none !important;
 }
+
+/* Source headings retain their wording and hierarchy inside disclosures. */
+.criterion > summary > :is(h1,h2,h3),
+.subcriterion > summary > :is(h1,h2,h3) {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+}
+.source-table th { padding: .6rem .75rem; border: 1px solid #e6dfe1; text-align: left; }
+.source-content .source-table { display: block; overflow-x: auto; }
+.source-content { scroll-margin-top: 90px; }
+.source-table:has(th:nth-child(3)) td:first-child { width: 4rem; min-width: 4rem; }
+/* Source pages supply their own headings; retain Quarto's breadcrumb. */
+body:has(.source-content[data-source="codebook_v3.md"]:not([data-section="e"]))
+  #title-block-header .quarto-title { display: none; }
+

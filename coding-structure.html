@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coding Structure – Credibility &amp; Reliability Coding</title>
+<title>Coding Structure — Version 3 – Credibility &amp; Reliability Coding</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -154,7 +154,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./codebook/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">All criteria / Overview</span></a>
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./codebook/acceptance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Evidentiary Acceptance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./codebook/assessment-focus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Assessment Focus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./codebook/substantive-criteria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Substantive criteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -184,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./codebook/e.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">E. Surrounding behaviour</span></a>
+ <span class="menu-text">E. Surrounding behavior</span></a>
   </div>
 </li>
       </ul>
@@ -200,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Coding Structure</h1>
+<h1 class="title">Coding Structure — Version 3</h1>
 </div>
 
 
@@ -217,9 +235,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p class="intro">
-Read this guide before using the Codebook. The coding rules below are reproduced from the supplied document.
-</p>
 <div class="page-actions">
 <button type="button" data-expand="true">
 Expand all
@@ -228,79 +243,114 @@ Expand all
 Collapse all
 </button>
 </div>
-<!-- Collapsible sections: keep HTML at column zero in Quarto Markdown. -->
-<details class="criterion" id="structure-0">
-<summary>Overview</summary>
-<div class="detail-body">
-<p>This document provides an overview of the coding for credibility and reliability criteria. It explains the coding structure and process in detail. Familiarize yourself with this document first, before reading the codebook. All codes, their definition, boundary conditions, and examples can be found in the codebook.</p>
-<h4 class="anchored">Important:</h4>
-<p>We are coding only credibility assessments, not descriptions of events retold by the court, summaries of what different parties in the court have said etc. The aim is to train a model to help us find the credibility assessments. For this, we need targeted coding, focusing only on credibility/reliability assessments.</p>
-<p>While things like circumstances and background criteria for the parties involved are an important aspect of the overall assessment of the court, they are not in themselves credibility criteria used by the court and should thus be ignored at this stage.</p>
-<h4 class="anchored">Skiljaktig mening / Divergent opinion:</h4>
-<p>These are not to be coded at this stage. While important, they will come in at a later stage in the project. Ignore them for now, even if they contain credibility/reliability assessments.</p>
-</div>
-</details>
-<details class="criterion" id="structure-1">
-<summary>1. Coding taxonomy at a glance</summary>
-<div class="detail-body">
 
+
+<div id="source-content" class="source-content quarto-include-in-search-index" data-section="all" data-source="coding_structure_v3.md">
+<p><strong>Credibility and Reliability Coding</strong></p>
+<section id="latest-revision" class="level2">
+<h2 class="anchored" data-anchor-id="latest-revision">Latest revision</h2>
+<p>2026-11-05 16:28 CET (Europe/Stockholm)</p>
+</section>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>This document explains the coding workflow, units, and recording procedures. Read it before the <a href="codebook/index.html">codebook</a>, which defines individual criteria, boundaries, Findings, and examples.</p>
+<p><strong>Important:</strong></p>
+<p>Code only the court's credibility/reliability assessments, not descriptions of events, reproduced party statements, or background circumstances that the court does not evaluate as credibility/reliability considerations.</p>
+<p><strong>Skiljaktig mening / Divergent opinion:</strong></p>
+<p>These are not to be coded at this stage. While important, they will come in at a later stage in the project. Ignore them for now, even if they contain credibility/reliability assessments.</p>
+</section>
+<section id="contents" class="level1">
+<h1>Contents</h1>
+<ol type="1">
+<li>Coding taxonomy at a glance</li>
+<li>General inclusion rule</li>
+<li>Document-level coding — Assessment Presence</li>
+<li>Document-level coding — Evidentiary Acceptance</li>
+<li>Block-level coding — Assessment Focus</li>
+<li>Assessment-level coding</li>
+<li>Notes</li>
+<li>Repeated and multiple assessments</li>
+<li>Assessments spanning multiple paragraphs or blocks</li>
+</ol>
+<details class="criterion" id="structure-1"><summary><h1 id="coding-taxonomy-at-a-glance">1. Coding taxonomy at a glance</h1></summary>
+<div class="detail-body">
 <table class="source-table caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Variable/aspect</th>
+<th>Possible response</th>
+<th>Type</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td>Level</td>
-<td>Variable/aspect</td>
-<td>Possible response</td>
-<td>Type</td>
-</tr>
-<tr class="even">
 <td>Document</td>
 <td>Credibility/reliability assessment present?</td>
 <td>Present / Not present</td>
 <td>Categorical</td>
 </tr>
+<tr class="even">
+<td>Document</td>
+<td>Acceptance of complainant's account / prosecution's case</td>
+<td>Fully accepted / Partially accepted / Not accepted / Insufficient evidence / Unclear</td>
+<td>Categorical</td>
+</tr>
 <tr class="odd">
+<td>Block</td>
+<td>Assessment Focus</td>
+<td>Direct assessment / Supporting or contradicting evidence / Overall synthesis / Other relevant assessment</td>
+<td>Categorical; one per block</td>
+</tr>
+<tr class="even">
 <td>Assessment</td>
 <td>Criterion</td>
 <td>One or more criteria from substantive taxonomy</td>
 <td>Categorical; multi-label</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Assessment</td>
 <td>Finding</td>
-<td>Additional information about the criterion.</td>
-<td>Categorical</td>
+<td>Additional information about the criterion</td>
+<td>Categorical; multi-select where applicable</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Assessment</td>
 <td>Person role</td>
 <td>Complainant / Defendant</td>
 <td>Categorical</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Assessment</td>
 <td>Person ID</td>
 <td>01 / 02 / 03 / etc.</td>
 <td>Within-document identifier</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Assessment</td>
 <td>Relevant charge</td>
 <td>Rape / Non-rape / Both-all / Unclear</td>
 <td>Categorical</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Assessment</td>
 <td>Valence</td>
 <td>Positive / Negative / Mixed / Ambiguous / Irrelevant</td>
 <td>Categorical</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>HR only</td>
 <td>HR reasoning status</td>
 <td>Own / Agreement-Adoption / Modification-Rejection / Other-Unclear</td>
 <td>Categorical</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Development/QC</td>
 <td>Notes</td>
 <td>Coder uncertainty, taxonomy problems, unusual cases</td>
@@ -308,195 +358,188 @@ Collapse all
 </tr>
 </tbody>
 </table>
-
+<p>The components have distinct units and purposes. See <a href="codebook/index.html">Codebook v3</a> for detailed definitions, boundaries, and examples.</p>
 </div>
 </details>
-<details class="criterion" id="structure-2">
-<summary>2. General inclusion rule</summary>
+<details class="criterion" id="structure-2"><summary><h1 id="general-inclusion-rule">2. General inclusion rule</h1></summary>
 <div class="detail-body">
-<p>Code a credibility/reliability criterion when the court uses a characteristic, circumstance, or consideration as part of its assessment of a person’s credibility, reliability, truthfulness, or the evidential value of their account.</p>
-<p>The court does not need to explicitly state how the criterion affects credibility/reliability. It is sufficient that the consideration forms part of identifiable credibility/reliability reasoning, which may be established from the surrounding context.</p>
-<h4 class="anchored">Coding rules:</h4>
+<p>Code a criterion when the court uses a characteristic, circumstance, or consideration to evaluate a person's credibility, reliability, truthfulness, or the evidentiary value of their account.</p>
 <ul>
-<li>Code criteria that the court explicitly evaluates or uses as part of its credibility/reliability reasoning, even without an explicit statement about their implications.</li>
-<li>Do not code when the court merely recounts events, reproduces statements, or presents evidence without using them as part of a credibility/reliability assessment.</li>
-<li>Do not automatically code every consideration mentioned near a credibility assessment. Its evaluative function must be identifiable from the context.</li>
-<li>Only code the court’s reasoning. Arguments or statements by other parties qualify only when the court adopts or uses them in its assessment.</li>
+<li><strong>Explicit or contextual connection:</strong> The court need not explicitly state the implication for credibility/reliability if the evaluative connection is identifiable from surrounding reasoning. This includes evaluations of supporting or contradicting evidence.</li>
+<li><strong>Exclude mere description:</strong> Do not code event narratives, reproduced statements, or presentation of evidence without an identifiable evaluative function.</li>
+<li><strong>Proximity is insufficient:</strong> Do not infer a connection simply because evidence appears near credibility reasoning or could potentially corroborate an account. It needs to be identifiable from surrounding reasoning.</li>
+<li><strong>Court's reasoning only:</strong> Arguments by other parties qualify only when the court adopts or evaluates them.</li>
 </ul>
 </div>
 </details>
-<details class="criterion" id="structure-3">
-<summary>3. Document-level coding</summary>
+<details class="criterion" id="structure-3"><summary><h1 id="document-level-coding-assessment-presence">3. Document-level coding — Assessment Presence</h1></summary>
 <div class="detail-body">
 <p>Every completely reviewed ruling must receive a document-level code indicating whether any qualifying credibility/reliability assessment was identified.</p>
-<h4 class="anchored">Credibility/reliability assessment present:</h4>
-<p>• Present</p>
-<p>• Not present</p>
+<p><strong>Credibility/reliability assessment present:</strong></p>
+<ul>
+<li><p>Present</p></li>
+<li><p>Not present</p></li>
+</ul>
 <p>Not present means that the entire relevant ruling has been reviewed and no qualifying credibility/reliability assessment was identified. It must not be used for documents that have not yet been completely reviewed.</p>
-<h4 class="anchored">Exclusions:</h4>
-<p>If a ruling is not eligible for coding, record “Excluded” at the beginning of the document’s coding sheet and briefly state the reason for exclusion.</p>
-<p>Only one exclusion entry is required per ruling. Excluded rulings should not be coded as “Not present”, since this category is reserved for eligible rulings that have been reviewed but contain no qualifying credibility/reliability assessments.</p>
+<p><strong>Exclusions:</strong></p>
+<p>If a ruling is not eligible for coding, record "Excluded" at the beginning of the document's coding sheet and briefly state the reason for exclusion.</p>
+<p>Only one exclusion entry is required per ruling. Excluded rulings should not be coded as "Not present", since this category is reserved for eligible rulings that have been reviewed but contain no qualifying credibility/reliability assessments.</p>
 </div>
 </details>
-<details class="criterion" id="structure-4">
-<summary>4.  Assessment-level coding</summary>
+<details class="criterion" id="structure-4"><summary><h1 id="document-level-coding-evidentiary-acceptance">4. Document-level coding — Evidentiary Acceptance</h1></summary>
 <div class="detail-body">
-<p>For every qualifying credibility/reliability assessment, record the following information.</p>
-<p>Each distinct criterion assessment should receive its own coding entry, including Criterion, Finding, Person role, Person ID, Relevant charge, Valence, and HR reasoning status (where applicable).</p>
-<p>When a passage contains multiple criteria, code each criterion separately, even if they occur within the same sentence or paragraph.</p>
-<details class="subcriterion" id="structure-4-0">
-<summary>4.1 Criteria</summary>
-<div class="detail-body">
-<p><b>Type:</b> Categorical</p>
-<p>Select the credibility/reliability criteria applied by the court. A single passage may contain multiple criteria. Do not force a passage into only one criterion when the court genuinely applies several.</p>
-<p>The individual criteria and their definitions are specified in the separate codebook.</p>
-<p>Use Notes when you are unsure whether the criterion fits, or there is additional information that you deem important to record.</p>
+<p><strong>Variable:</strong> <code>account_evidentiary_acceptance</code>.<br>
+<strong>Level:</strong> Document.<br>
+<strong>Coding unit:</strong> One assessment per complainant per ruling. A ruling involving multiple complainants may therefore receive multiple classifications.</p>
+<p>Record the extent to which the court accepts the complainant's account of the alleged rape or considers the prosecution's case established. Distinguish explicit rejection of the account (<strong>Not accepted</strong>) from an unmet evidentiary threshold without such rejection (<strong>Insufficient evidence</strong>), whether due to the account, other evidence, or both.</p>
+<p><strong>Categories:</strong> 1 Fully accepted; 2 Partially accepted; 3 Not accepted; 4 Insufficient evidence; 5 Unclear / cannot be determined.</p>
+<p>Include rape-related assessments only (including other charges assessed jointly with rape). Do not equate acceptance with conviction or infer this variable from <a href="codebook/d.html#d2">D2</a>, Valence, or the verdict. Flag conflicting outcomes across multiple allegations involving one complainant in Notes for pilot review.</p>
+<p>For definitions and boundaries, see <a href="codebook/acceptance.html#part-i-acceptance-of-the-complainants-account-prosecutions-case">Codebook v3 — Part I</a>.</p>
 </div>
 </details>
-<details class="subcriterion" id="structure-4-1">
-<summary>4.2 Finding</summary>
+<details class="criterion" id="structure-5"><summary><h1 id="block-level-coding-assessment-focus">5. Block-level coding — Assessment Focus</h1></summary>
 <div class="detail-body">
-<p><b>Type:</b> Categorical</p>
-<p>Record what the court finds concerning the criterion. These are standardized and different between criterions. The codebook contains the finding section for each of the criteria including examples.</p>
-<p>The aim is to provide additional information about the criterion. For example for criterion <a href="codebook/a.html#a1" class="criterion-link">A1</a> —Detail / richtness of detail, whether the court found the statement to be detailed, partially detailed, partially not detailed or not detailed.</p>
-<p>If none of the available Finding categories fits perfectly, select the closest appropriate category and briefly explain the issue in Notes. Do not force an assessment into a category that clearly does not represent the court’s finding.</p>
+<p><strong>Variable:</strong> <code>assessment_focus</code>.<br>
+<strong>Unit:</strong> One classification per included text block.</p>
+<p>Record the primary function of the court's reasoning, rather than every criterion mentioned in the block.</p>
+<p><strong>Categories:</strong> 1 Direct credibility/reliability assessment; 2 Assessment of supporting/contradicting evidence; 3 Overall/synthesizing assessment; 4 Other relevant assessment (Note required).</p>
+<p>All assessment rows referring to the same block receive the same focus code. Use surrounding context where necessary. Assess the primary function of each block separately when an assessment spans blocks; functions may differ. <strong>When a sentence or continuous assessment is split across blocks solely by a page break, assign the same Assessment Focus to both blocks.</strong> Flag unresolved ambiguity in Notes. The presence of evidence does not automatically imply focus Code 2.</p>
+<p>For detailed boundaries and judicial examples, see <a href="codebook/assessment-focus.html#part-ii-assessment-focus">Codebook v3 — Part II</a>.</p>
 </div>
 </details>
-<details class="subcriterion" id="structure-4-2">
-<summary>4.3 Person role</summary>
+<details class="criterion" id="structure-6"><summary><h1 id="assessment-level-coding">6. Assessment-level coding</h1></summary>
 <div class="detail-body">
-<p><b>Type:</b> Categorical</p>
+<p>For each distinct criterion assessment, record Criterion, Finding(s), Person role, Person ID, Relevant charge, Valence, and HR reasoning status (where applicable). Different criteria require separate entries, even within the same passage. Section 8 specifies when multiple Findings can share an entry.</p>
+<details class="subcriterion" id="structure-6-1"><summary><h2 id="criteria" class="anchored" data-anchor-id="contents">6.1 Criteria</h2></summary>
+<div class="detail-body">
+<p><strong>Type:</strong> Categorical</p>
+<p>Select every substantive credibility/reliability criterion the court applies. See the <a href="codebook/index.html">codebook</a> for definitions and criterion-specific rules.</p>
+</div>
+</details>
+<details class="subcriterion" id="structure-6-2"><summary><h2 id="finding" class="anchored">6.2 Finding</h2></summary>
+<div class="detail-body">
+<p><strong>Type:</strong> Categorical; multi-select where applicable</p>
+<p>Record what the court finds about the criterion, using its criterion-specific Finding categories in the codebook. Multiple Findings may share one assessment <strong>only when they have the same Valence</strong>; Findings with different Valences require separate assessments (Section 8).</p>
+<p>If no Finding fits adequately, use Notes to explain the difficulty; do not force an incorrect classification.</p>
+</div>
+</details>
+<details class="subcriterion" id="structure-6-3"><summary><h2 id="person-role" class="anchored">6.3 Person role</h2></summary>
+<div class="detail-body">
+<p><strong>Type:</strong> Categorical</p>
 <p>Record whose account is being assessed. Choose:</p>
 <ul>
-<li>Complainant</li>
-<li>Defendant</li>
+<li><p>Complainant</p></li>
+<li><p>Defendant</p></li>
 </ul>
 </div>
 </details>
-<details class="subcriterion" id="structure-4-3">
-<summary>4.4 Person ID</summary>
+<details class="subcriterion" id="structure-6-4"><summary><h2 id="person-id" class="anchored">6.4 Person ID</h2></summary>
 <div class="detail-body">
-<p><b>Type:</b> Within-document identifier</p>
-<p>This distinction is essential in rulings containing multiple complainants or defendants. It records which complainant or defendant the assessment concerns.</p>
+<p><strong>Type:</strong> Within-document identifier</p>
+<p><strong>This distinction is only applied to rulings containing multiple complainants or defendants.</strong> It records which complainant or defendant the assessment concerns.</p>
 <p>This should follow the order in which the complainants/defendants are named at the beginning of the document. Meaning, the first complainant mentioned becomes 01, the second becomes 02 and so on.</p>
-<p>Do not independently invent a different numbering system!</p>
+<p><strong>Do not independently invent a different numbering system!</strong></p>
 </div>
 </details>
-<details class="subcriterion" id="structure-4-4">
-<summary>4.5 Relevant charge</summary>
+<details class="subcriterion" id="structure-6-5"><summary><h2 id="relevant-charge" class="anchored">6.5 Relevant charge</h2></summary>
 <div class="detail-body">
-<p><b>Type:</b> Categorical</p>
+<p><strong>Type:</strong> Categorical</p>
 <p>Record whether the person/assessment is connected to the rape charge or another charge in the ruling.</p>
 <p>Choose:</p>
 <ul>
-<li><b>Rape:</b>
-When the credibility assessment concerns the rape charge. This includes when rape/negligent rape is the only charge in the ruling.</li>
-<li><b>Non-rape:</b>
-When the credibility assessments concerns another charged than rape. This applied only to rulings with more charges than rape/negligent rape.</li>
-<li><b>Both/all:</b>
-When the credibility/reliability assessment concerns more than one charge simultaneously, including at least one charge other than rape/negligent rape. This applied only to rulings with more charges than rape/negligent rape.</li>
-<li><b>Unclear:</b>
-When it is unclear which of the charges the assessment seems to concern. This applied only to rulings with more charges than rape/negligent rape.</li>
+<li><p><strong>Rape</strong> When the credibility assessment concerns the rape charge. This includes when rape/negligent rape is the only charge in the ruling.</p></li>
+<li><p><strong>Non-rape</strong> When the credibility assessments concerns another charge than rape. This applies only to rulings with more charges than rape/negligent rape.</p></li>
+<li><p><strong>Both/all</strong> When the credibility/reliability assessment concerns more than one charge simultaneously, including at least one rape/negligent rape and one non-rape charge. This applies only to rulings with more charges than rape/negligent rape.</p></li>
+<li><p><strong>Unclear</strong> When it is unclear which of the charges the assessment seems to concern. This applies only to rulings with more charges than rape/negligent rape.</p></li>
 </ul>
 </div>
 </details>
-<details class="subcriterion" id="structure-4-5">
-<summary>4.6 Valence</summary>
+<details class="subcriterion" id="structure-6-6"><summary><h2 id="valence" class="anchored">6.6 Valence</h2></summary>
 <div class="detail-body">
-<p><b>Type:</b> Categorical</p>
-<p>Valence records the direction of the court’s credibility/reliability assessment. This direction may be explicitly stated or inferred from the criterion being evaluated and its meaning within the court’s reasoning.</p>
+<p><strong>Type</strong>: Categorical</p>
+<p>Valence records the direction of the court's credibility/reliability assessment. This direction may be explicitly stated or inferred from the criterion being evaluated and its meaning within the court's reasoning.</p>
 <ul>
-<li><b>Positive:</b>
-The assessment strengthens the credibility/reliability or evidential value of the person's account.</li>
-<li><b>Negative:</b>
-The assessment weakens the credibility/reliability or evidential value of the person's account.</li>
-<li><b>Mixed:</b>
-The court's assessment itself contains both positive and negative implications for credibility/reliability.</li>
-<li><b>Ambiguous:</b>
-The information in the court ruling itself is genuinely ambiguous regarding the direction of the assessment.</li>
-<li><b>Irrelevant / No effect:</b>
-The court explicitly considers a criterion but concludes that it does not affect the credibility/reliability or evidential value of the person’s account.</li>
+<li><p><strong>Positive:</strong> The assessment strengthens the credibility/reliability or evidentiary value of the person's account.</p></li>
+<li><p><strong>Negative:</strong> The assessment weakens the credibility/reliability or evidentiary value of the person's account.</p></li>
+<li><p><strong>Mixed:</strong> A single assessment has both positive and negative implications for credibility/reliability. Do not use Mixed merely to combine different Findings with different Valences; record those separately (Section 8).</p></li>
+<li><p><strong>Ambiguous:</strong> The information in the court ruling itself is genuinely ambiguous regarding the direction of the assessment.</p></li>
+<li><p><strong>Irrelevant / No effect</strong> The court explicitly considers a criterion but concludes that it does not affect the credibility/reliability or evidentiary value of the person's account.</p></li>
 </ul>
-<h4 class="anchored">Coding rules:</h4>
+<p><strong>Coding rules:</strong></p>
 <ul>
-<li><b>Explicit evaluation:</b> Follow the direction expressed by the court.</li>
-<li><b>Implicit evaluation:</b> When the court identifies an established credibility/reliability criterion without explicitly stating its implications, assign valence according to the criterion’s generally recognized meaning in judicial credibility assessments (see, for example, NJA 2010, s. 671).</li>
-<li><b>Context matters:</b> Do not automatically assign valence based on the presence or absence of a criterion when the court’s reasoning indicates a different interpretation.</li>
-<li><b>Ambiguous vs. coder uncertainty:</b> Use Ambiguous only when the direction genuinely cannot be established from the ruling. Record uncertainty about a coding decision in Notes.</li>
-<li><b>Ambiguous vs. Ireelevant / No effect:</b> Do not confuse Irrelevant / No effect with Ambiguous. Irrelevant means the court explicitly indicates that the criterion has no effect, whereas Ambiguous means that the direction of the assessment cannot be established.</li>
+<li><p><strong>Finding versus Valence:</strong> Finding records what the court establishes concerning a criterion, while Valence records how the court evaluates that finding in relation to credibility/reliability. The two must be coded independently. The same Finding can have different Valence classifications depending on the court's reasoning.</p></li>
+<li><p><strong>Court's evaluation takes precedence:</strong> Assign Valence based on how the court evaluates the criterion, considering both explicit statements and surrounding context. Do not automatically assign Positive or Negative Valence based on the Finding alone.</p></li>
+<li><p><strong>Conventional interpretation:</strong> When the court identifies a criterion without indicating its implications, assign Valence according to its generally recognized meaning in judicial credibility assessments (e.g., NJA 2010, s. 671). For example, a detailed account is conventionally considered positive for credibility. However, conventional interpretations must never override the court's actual evaluation. For criteria without a clear conventional interpretation, Valence must be established from the court's reasoning.</p></li>
+<li><p><strong>Ambiguous vs. coder uncertainty:</strong> Use Ambiguous only when the direction genuinely cannot be established from the ruling. Record uncertainty about a coding decision in Notes.</p></li>
+<li><p><strong>Ambiguous vs. Irrelevant / No effect:</strong> Do not confuse Irrelevant / No effect with Ambiguous. Irrelevant means the court explicitly indicates that the criterion has no effect, whereas Ambiguous means that the direction of the assessment cannot be established.</p></li>
 </ul>
-<h4 class="anchored">Example:</h4>
-<p>“The account was detailed, long and clear.”</p>
-<p>→ <b>Positive</b>, even without an explicit statement that these characteristics strengthen credibility, because they are generally treated as positive indicators in judicial credibility assessments.</p>
-<p><b>Important</b> Valence reflects the implications of the court’s assessment, not whether the account is ultimately accepted or rejected. An individual criterion may receive Positive valence even when the court’s overall credibility judgment is negative.</p>
+<p><strong>Example:</strong></p>
+<p>"The account was detailed, long and clear."</p>
+<p>→ <strong>Positive</strong>, even without an explicit statement that these characteristics strengthen credibility, because they are generally treated as positive indicators in judicial credibility assessments.</p>
+<p><strong>Important:</strong> Valence reflects the implications of the court's assessment, not whether the account is ultimately accepted or rejected. An individual criterion may receive Positive valence even when the court's overall credibility judgment is negative.</p>
 </div>
 </details>
-<details class="subcriterion" id="structure-4-6">
-<summary>4.7 HR reasoning status</summary>
+<details class="subcriterion" id="structure-6-7"><summary><h2 id="hr-reasoning-status" class="anchored">6.7 HR reasoning status</h2></summary>
 <div class="detail-body">
-<p><b>Type:</b> Categorical</p>
+<p><strong>Type</strong>: Categorical</p>
 <p>Credibility/reliability assessments in appellate court rulings receive an additional code describing the relationship between the HR's reasoning and the TR's reasoning.</p>
 <ul>
-<li><b>Own:</b> 
-The HR makes the assessment without referring to the TR's assessment.</li>
-<li><b>Agreement/Adoption:</b> 
-The HR explicitly engages with a criterion or assessment made by the TR and agrees with it.</li>
-<li><b>Modification/Rejection:</b> 
-The HR engages with a criterion or assessment made by the TR but modifies or rejects the TR's assessment.</li>
-<li><b>Other/Unclear:</b> 
-The HR's reasoning genuinely cannot be adequately represented by the three categories above.</li>
+<li><p><strong>Own</strong>: The HR makes the assessment without referring to the TR's assessment.</p></li>
+<li><p><strong>Agreement/Adoption:</strong> The HR explicitly engages with a criterion or assessment made by the TR and agrees with it.</p></li>
+<li><p><strong>Modification/Rejection:</strong> The HR engages with a criterion or assessment made by the TR but modifies or rejects the TR's assessment.</p></li>
+<li><p><strong>Other/Unclear:</strong> The HR's reasoning genuinely cannot be adequately represented by the three categories above.</p></li>
 </ul>
 <p>Other/Unclear should not be selected because the coder is uncertain. Coder uncertainty should instead be explained in Notes.</p>
 </div>
 </details>
 </div>
 </details>
-<details class="criterion" id="structure-5">
-<summary>5. Notes</summary>
+<details class="criterion" id="structure-7"><summary><h1 id="notes">7. Notes</h1></summary>
 <div class="detail-body">
-<p><b>Type:</b> Optional free text</p>
-<p>Notes are primarily a tool for coder uncertainty or noting special cases. Straightforward assessments do not require a note.</p>
-<p>Use Notes when, for example:</p>
+<p><strong>Type:</strong> Optional free text</p>
+<p>Use Notes to explain coder uncertainty, exceptional cases, and coding problems (including person, charge, Finding, or Valence ambiguities). State briefly what is uncertain and why. Straightforward assessments do not require Notes; follow any mandatory Notes instructions for specific categories.</p>
+</div>
+</details>
+<details class="criterion" id="structure-8"><summary><h1 id="repeated-and-multiple-assessments">8. Repeated and multiple assessments</h1></summary>
+<div class="detail-body">
 <ul>
-<li>you are uncertain about a coding decision;</li>
-<li>the reason for your uncertainty should be discussed;</li>
-<li>a multiple-person or charge situation creates a coding problem;</li>
-<li>the relationship between finding and valence is difficult to represent;</li>
+<li><strong>Different criteria:</strong> Record separate assessments, even when they occur in the same sentence or block.</li>
+<li><strong>Same criterion, multiple Findings with the same Valence:</strong> Record one criterion assessment with all applicable Findings.</li>
+<li><strong>Same criterion, Findings with different Valences:</strong> Record separate assessments, grouping only Findings that share a Valence. Do not combine them under Mixed solely because their Valences differ.</li>
+<li><strong>Repeated assessments:</strong> Code each genuinely new instance of a credibility/reliability assessment, even if the criterion appeared earlier; do not duplicate a mere summary of an assessment already coded.</li>
+<li><strong>Criterion-specific units:</strong> Follow the codebook. For <a href="codebook/b.html#b3">B3</a>, code each evidence source separately, including individual witnesses evaluated collectively; separately code substantively new evaluations of the same source.</li>
 </ul>
-<p>When recording uncertainty, briefly state what you are uncertain about and why.</p>
 </div>
 </details>
-<details class="criterion" id="structure-6">
-<summary>6. Repeated and multiple assessments</summary>
+<details class="criterion" id="structure-9"><summary><h1 id="assessments-spanning-multiple-paragraphs-or-blocks">9. Assessments spanning multiple paragraphs or blocks</h1></summary>
 <div class="detail-body">
-<h4 class="anchored">Multiple criteria in the same passage</h4>
-<p>A single passage may receive multiple credibility/reliability criteria. This is expected and should be coded when appropriate.</p>
-<h4 class="anchored">Repeated assessments</h4>
-<p>Code each new instance in which the court makes a credibility/reliability assessment, even if the same criterion has already appeared earlier in the ruling.</p>
-<h4 class="anchored">Criterion-specific coding rules</h4>
-<p>Some criteria have additional rules for determining what constitutes a separate assessment. For example, <a href="codebook/b.html#b3" class="criterion-link">B3</a> (Consistency / support from other evidence) requires separate coding entries for distinct pieces of evidence evaluated by the court, while collectively evaluated witness statements count as one assessment.</p>
-<p>Consult the codebook for the specific coding rules applicable to each criterion.</p>
-</div>
-</details>
-<details class="criterion" id="structure-7">
-<summary>7. Assessment spanning multiple paragraphs or blocks</summary>
-<div class="detail-body">
-<p>When encountering an assessment that spans multiple blocks, note down all blocks that the assessment contains.</p>
-<p>An assessment may span multiple blocks when the court’s evaluation of a single criterion begins in one block and continues into another. In such cases, record all blocks belonging to that assessment as one coding entry.</p>
+<p>When encountering an assessment that spans multiple blocks, note down all blocks that the assessment contains. Assessment Focus is coded for each included block, and blocks with genuinely different primary functions may receive different focus categories.</p>
+<p>An assessment may span multiple blocks when the court's evaluation of a single criterion begins in one block and continues into another. In such cases, record all blocks belonging to that assessment as one coding entry.</p>
 <p>If different criteria are evaluated across the blocks, create separate entries for each criterion.</p>
 <ul>
-<li><b>Assessment spans two or more subsequent blocks:</b>
-Write it as 30-32.</li>
-<li><b>Assessment spans two more blocks with heading/footer blocks in between:</b> Write it as 30;32, where block 31 just contains a heading/footer and is thus not included.</li>
+<li><p><strong>Assessment spans two or more subsequent blocks:</strong> Write it as 30-32.</p></li>
+<li><p><strong>Assessment spans two more blocks with heading/footer blocks in between:</strong> Write it as 30;32, where block 31 just contains a heading/footer and is thus not included.</p></li>
 </ul>
 </div>
 </details>
-
-
+</section>
+</div>
 
 </main> <!-- /main -->
 <script>
 (function () {
+  function markCurrentNavigation() {
+    var path = window.location.pathname;
+    document.querySelectorAll('.navbar .nav-link').forEach(function (link) {
+      var target = new URL(link.getAttribute('data-original-href') || link.href).pathname;
+      var codebook = target.endsWith('/codebook/index.html');
+      var active = path === target || path === target.replace(/index\.html$/, '') ||
+        (codebook && path.startsWith(target.slice(0, -10)));
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+  }
   function openHashTarget() {
     if (!window.location.hash) return;
     var id = decodeURIComponent(window.location.hash.slice(1));
@@ -506,6 +549,15 @@ Write it as 30-32.</li>
     var p = el.parentElement;
     while (p) { if (p.tagName === 'DETAILS') p.open = true; p = p.parentElement; }
     setTimeout(function () { el.scrollIntoView({block: 'start'}); }, 70);
+  }
+  function openSearchMatches() {
+    document.querySelectorAll('#source-content mark').forEach(function (mark) {
+      var parent = mark.parentElement;
+      while (parent) {
+        if (parent.tagName === 'DETAILS') parent.open = true;
+        parent = parent.parentElement;
+      }
+    });
   }
   document.addEventListener('click', function (ev) {
     var btn = ev.target.closest('button[data-expand]');
@@ -518,7 +570,10 @@ Write it as 30-32.</li>
   });
   window.addEventListener('hashchange', openHashTarget);
   document.addEventListener('DOMContentLoaded', openHashTarget);
+  document.addEventListener('DOMContentLoaded', markCurrentNavigation);
+  document.addEventListener('DOMContentLoaded', openSearchMatches);
   window.addEventListener('load', openHashTarget);
+  window.addEventListener('load', markCurrentNavigation);
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

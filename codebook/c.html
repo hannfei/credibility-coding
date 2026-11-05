@@ -154,7 +154,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../codebook/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">All criteria / Overview</span></a>
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../codebook/acceptance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Evidentiary Acceptance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../codebook/assessment-focus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Assessment Focus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../codebook/substantive-criteria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Substantive criteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -184,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../codebook/e.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">E. Surrounding behaviour</span></a>
+ <span class="menu-text">E. Surrounding behavior</span></a>
   </div>
 </li>
       </ul>
@@ -217,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="index.html" class="back-link">← Codebook overview</a></p>
+<p><a href="../codebook/index.html" class="back-link">← Codebook overview</a></p>
 <div class="page-actions">
 <button type="button" data-expand="true">
 Expand all
@@ -226,113 +244,120 @@ Expand all
 Collapse all
 </button>
 </div>
-<!-- Collapsible sections: keep HTML at column zero in Quarto Markdown. -->
-<details class="criterion" id="c1">
-<summary>C1 — Motive to lie</summary>
-<div class="detail-body">
-<p>Evaluation of whether a person has, or lacks, a particular motive, interest, or incentive to provide false or misleading information.</p>
-<p>This concerns whether the person has a reason to lie or distort their account, rather than whether the court considers that they have actually been dishonest.</p>
-<p>Potential motives include revenge, personal conflict, financial interests, self-protection, avoiding responsibility, or protecting another person.</p>
-<p>The code applies to both complainants and defendants.</p>
-<h4 class="anchored">Boundary conditions:</h4>
-<ul>
-<li>Code <a href="c.html#c1" class="criterion-link">C1</a> when the court explicitly evaluates whether a person has or lacks a motive or incentive to lie or distort their account.</li>
-<li>The court does not need to conclude that the person has actually lied. <a href="c.html#c1" class="criterion-link">C1</a> concerns the existence or absence of a possible motive.</li>
-<li>Do not automatically code <a href="c.html#c1" class="criterion-link">C1</a> merely because the defendant has a general interest in avoiding conviction. The court must explicitly evaluate this motivation as relevant to credibility/reliability.</li>
-<li>Do not code <a href="c.html#c1" class="criterion-link">C1</a> merely because the court considers an account fabricated, deliberately misleading, or an efterhandskonstruktion. Such assessments belong under <a href="c.html#c2" class="criterion-link">C2</a> (Fabrication / deliberate distortion).</li>
-<li>Arguments about possible motives raised by the defense, prosecution, or other parties should only be coded when the court itself evaluates them as part of its credibility/reliability assessment.</li>
-<li>If the court explicitly evaluates both a possible motive to lie and whether the person has fabricated or deliberately distorted their account, code both <a href="c.html#c1" class="criterion-link">C1</a> and <a href="c.html#c2" class="criterion-link">C2</a>.</li>
-</ul>
-<h4 class="anchored">Examples:</h4>
-<ul>
-<li>“Det har inte heller framkommit något som ger anledning att tro att hon medvetet skulle lämna felaktiga uppgifter om de aktuella händelserna.”</li>
-<li>“Mot bakgrund av den tidigare konflikten mellan parterna har målsäganden kunnat ha ett motiv att lämna felaktiga uppgifter om den tilltalade.”</li>
-<li>“Försvaret har gjort gällande att målsäganden haft anledning att lämna falska uppgifter på grund av en tidigare konflikt. Tingsrätten anser dock att det inte finns något stöd för att hon skulle ha haft ett sådant motiv.”</li>
-<li>“Den tilltalade har ett intresse av att minska sitt straffansvar, vilket måste beaktas vid bedömningen av hans uppgifter.”</li>
-</ul>
-<h4 class="anchored">Findings</h4>
-<p>The finding section is used to provide further details for the respective codes. Below are the response alternatives available and their respective examples.</p>
 
+
+<div id="source-content" class="source-content quarto-include-in-search-index" data-source="codebook_v3.md" data-section="c">
+<section id="c.-person-motivations" class="level2">
+<h2 class="anchored" data-anchor-id="c.-person-motivations">C. Person motivations</h2>
+<details class="criterion" id="c1"><summary><h2 id="c1-motive-to-lie" class="anchored">C1 — Motive to lie</h2></summary>
+<div class="detail-body">
+<p>Evaluation of whether a person has or lacks a possible motive or incentive to provide false or misleading information (e.g., conflict, revenge, self-protection). <strong><a href="c.html#c1">C1</a> concerns a possible motive, not whether the person actually lied.</strong></p>
+<p><strong>Boundary conditions:</strong></p>
+<ul>
+<li>Do not infer <a href="c.html#c1">C1</a> merely from a defendant's general interest in avoiding conviction; the court must evaluate that motivation.</li>
+<li><strong><a href="c.html#c1">C1</a> versus <a href="c.html#c2">C2</a>:</strong> <a href="c.html#c2">C2</a> concerns alleged fabrication or deliberate distortion. Code both only when both a motive and fabrication are evaluated.</li>
+<li><strong>Source attribution is specific to <a href="c.html#c1">C1</a>:</strong> Retain the distinction between a motive the court discusses without explicitly attributing it to another party and a motive the court explicitly presents as raised by the defense or another party. In either case, the court must evaluate the argument.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>"Mot bakgrund av den tidigare konflikten mellan parterna har målsäganden kunnat ha ett motiv att lämna felaktiga uppgifter om den tilltalade."</li>
+<li>"Försvaret har gjort gällande att målsäganden haft anledning att lämna falska uppgifter på grund av en tidigare konflikt. Tingsrätten anser dock att det inte finns något stöd för att hon skulle ha haft ett sådant motiv."</li>
+</ul>
+<section id="c1-findings" class="level3">
+<h3 class="anchored" data-anchor-id="c1-findings">C1 — Findings</h3>
 <table class="source-table caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>Examples / guidance</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td>Motive to lie</td>
-<td>"haft anledning att lämna felaktiga uppgifter”; “motiv att lämna falska uppgifter”</td>
+<td>"haft anledning att lämna felaktiga uppgifter"; "motiv att lämna falska uppgifter"</td>
 </tr>
 <tr class="even">
 <td>No motive to lie</td>
-<td>“saknas anledning att lämna felaktiga uppgifter”</td>
+<td>"saknas anledning att lämna felaktiga uppgifter"</td>
 </tr>
 <tr class="odd">
 <td>Motive to lie (others)</td>
-<td>"försvaret har gjort gällande att målsäganden hat ett motiv att ljuga” (when the court agrees with this assessment)</td>
+<td>"försvaret har gjort gällande att målsäganden har motiv att ljuga" (när domstolen instämmer)</td>
 </tr>
 <tr class="even">
 <td>No motive to lie (others)</td>
-<td>“försvarets påstående om motiv att ljuga saknar stöd”</td>
+<td>"försvarets påstående om motiv att ljuga saknar stöd"</td>
 </tr>
 </tbody>
 </table>
-
-<h4 class="anchored">Clarification of Findings:</h4>
-<ul>
-<li><b>Motive to lie / No motive to lie:</b>
-Code this when the court does not explicitly state that the defense or someone else has proposed this motive.</li>
-<li><b>Motive to lie / No motive to lie (others):</b>
-Code this when the court explicitly states that the defense or someone else has proposed this motive.</li>
-</ul>
+<p><strong>Finding attribution:</strong> Use <strong>Motive to lie / No motive to lie</strong> when the court does not explicitly attribute the motive argument to another party; use the corresponding <strong>(others)</strong> Finding when it explicitly does.</p>
+</section>
 </div>
 </details>
-<details class="criterion" id="c2">
-<summary>C2 — Fabrication / deliberate distortion</summary>
+<details class="criterion" id="c2"><summary><h2 id="c2-fabrication-deliberate-distortion" class="anchored">C2 — Fabrication / deliberate distortion</h2></summary>
 <div class="detail-body">
-<p>Evaluation of whether a person appears to have fabricated, deliberately distorted, or intentionally adapted their account to present a false or misleading version of events.</p>
-<p>The code also includes assessments in which the court explicitly rejects the possibility that an account has been fabricated or deliberately distorted.</p>
-<p>Unlike <a href="c.html#c1" class="criterion-link">C1</a>, <a href="c.html#c2" class="criterion-link">C2</a> concerns whether the court considers the person to have actually fabricated or deliberately distorted their account.</p>
-<p>The code applies to both complainants and defendants.</p>
-<h4 class="anchored">Boundary conditions:</h4>
+<p>Evaluation of whether a person fabricated, deliberately distorted, or intentionally adapted an account to mislead, including the court's explicit rejection of that possibility.</p>
+<p><strong>Boundary conditions:</strong></p>
 <ul>
-<li>Code <a href="c.html#c2" class="criterion-link">C2</a> when the court explicitly evaluates whether an account is fabricated, deliberately misleading, or an efterhandskonstruktion.</li>
-<li>Code <a href="c.html#c2" class="criterion-link">C2</a> when the court evaluates whether a person has intentionally adapted their account to fit other evidence, conceal information, or present a misleading version of events.</li>
-<li>Also code <a href="c.html#c2" class="criterion-link">C2</a> when the court explicitly concludes that there are no indications of deliberate fabrication or dishonesty.</li>
-<li>Do not code <a href="c.html#c2" class="criterion-link">C2</a> merely because the court identifies a possible motive to lie or a lack thereof. Such assessments belong under <a href="c.html#c1" class="criterion-link">C1</a> (Motive to lie).</li>
-<li>Do not code <a href="c.html#c2" class="criterion-link">C2</a> merely because an account is considered incorrect, inconsistent, implausible, or unreliable. The court must explicitly evaluate possible fabrication or deliberate distortion.</li>
-<li>Do not infer dishonesty merely because the court accepts the complainant’s account, rejects the defendant’s account, or finds the defendant guilty. Such conclusions do not independently establish an assessment of deliberate fabrication.</li>
-<li>If the court explicitly evaluates both a motive to lie and actual or suspected fabrication, code both <a href="c.html#c1" class="criterion-link">C1</a> and <a href="c.html#c2" class="criterion-link">C2</a>.</li>
+<li><strong><a href="c.html#c2">C2</a> versus <a href="c.html#c1">C1</a>:</strong> A possible motive to lie is <a href="c.html#c1">C1</a>; fabrication or deliberate adaptation is <a href="c.html#c2">C2</a>. Code both if both are evaluated.</li>
+<li>Incorrectness, inconsistency, implausibility, or an adverse verdict does not by itself establish deliberate fabrication.</li>
 </ul>
-<h4 class="anchored">Examples:</h4>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>“Den tilltalades förklaring framstår som en efterhandskonstruktion.”</li>
-<li>“Tingsrätten anser att den tilltalade har anpassat sin berättelse efter de uppgifter som framkommit under utredningen.”</li>
-<li>“Målsägandens uppgifter framstår i vissa delar som tillrättalagda för att passa den övriga bevisningen.”</li>
-<li>“Det finns inget som tyder på att den tilltalade medvetet har lämnat oriktiga uppgifter.</li>
-<li>“Berättelsen framstår dock i vissa delar som tillrättalagd och anpassad på så sätt att den utelämnar detaljer som är till nackdel för honom.”
-(Code <a href="c.html#c2" class="criterion-link">C2</a> for “tillrättalagd” and <a href="a.html#a14" class="criterion-link">A14</a> for “utelämnar detaljer som är till nackdel för honom”.)</li>
+<li>"Den tilltalades förklaring framstår som en efterhandskonstruktion."</li>
+<li>"Tingsrätten anser att den tilltalade har anpassat sin berättelse efter de uppgifter som framkommit under utredningen."</li>
+<li>"Målsägandens berättelse framstår inte som någon efterhandskonstruktion." (<strong>Finding: No fabrication.</strong>)</li>
 </ul>
-<h4 class="anchored">Findings</h4>
-<p>The finding section is used to provide further details for the respective codes. Below are the response alternatives available and their respective examples.</p>
-
+<section id="c2-findings" class="level3">
+<h3 class="anchored" data-anchor-id="c2-findings">C2 — Findings</h3>
 <table class="source-table caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>Examples / guidance</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td>Fabrication</td>
-<td>"efterhandskonstruktion”; “tillrättalagd beröttelse”; “anpassat sin berättelse efter bevisningen”</td>
+<td>"efterhandskonstruktion"; "tillrättalagd berättelse"; "anpassat sin berättelse efter bevisningen"</td>
 </tr>
 <tr class="even">
 <td>No fabrication</td>
-<td>“ingen fterhandskonstruktion”; “inte medvetet lömnat oriktiga uppgifter”</td>
+<td>"ingen efterhandskonstruktion"; "inte medvetet lämnat oriktiga uppgifter"</td>
 </tr>
 </tbody>
 </table>
-
+</section>
 </div>
 </details>
-
-
+</section>
+</div>
 
 </main> <!-- /main -->
 <script>
 (function () {
+  function markCurrentNavigation() {
+    var path = window.location.pathname;
+    document.querySelectorAll('.navbar .nav-link').forEach(function (link) {
+      var target = new URL(link.getAttribute('data-original-href') || link.href).pathname;
+      var codebook = target.endsWith('/codebook/index.html');
+      var active = path === target || path === target.replace(/index\.html$/, '') ||
+        (codebook && path.startsWith(target.slice(0, -10)));
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+  }
   function openHashTarget() {
     if (!window.location.hash) return;
     var id = decodeURIComponent(window.location.hash.slice(1));
@@ -342,6 +367,15 @@ Code this when the court explicitly states that the defense or someone else has 
     var p = el.parentElement;
     while (p) { if (p.tagName === 'DETAILS') p.open = true; p = p.parentElement; }
     setTimeout(function () { el.scrollIntoView({block: 'start'}); }, 70);
+  }
+  function openSearchMatches() {
+    document.querySelectorAll('#source-content mark').forEach(function (mark) {
+      var parent = mark.parentElement;
+      while (parent) {
+        if (parent.tagName === 'DETAILS') parent.open = true;
+        parent = parent.parentElement;
+      }
+    });
   }
   document.addEventListener('click', function (ev) {
     var btn = ev.target.closest('button[data-expand]');
@@ -354,7 +388,10 @@ Code this when the court explicitly states that the defense or someone else has 
   });
   window.addEventListener('hashchange', openHashTarget);
   document.addEventListener('DOMContentLoaded', openHashTarget);
+  document.addEventListener('DOMContentLoaded', markCurrentNavigation);
+  document.addEventListener('DOMContentLoaded', openSearchMatches);
   window.addEventListener('load', openHashTarget);
+  window.addEventListener('load', markCurrentNavigation);
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
